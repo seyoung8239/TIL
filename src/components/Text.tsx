@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 type propsType = {
 	text: string;
 };
 
-const Text = ({ text }: propsType) => {
+const Text: FunctionComponent<propsType> = ({ text }) => {
 	return <div>{text}</div>;
 };
 
