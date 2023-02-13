@@ -1,3 +1,6 @@
+const patth = require('path');
+const { createFilePath } = require(`gatsby-source-filesystem`);
+
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -33,4 +36,69 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
 			},
 		},
 	});
+};
+
+// generate a slug for each post data
+exports.onCreateNode = ({ node, getNode, actions }) => {
+	const { createNodeField } = actions;
+	console.log('onCreate');
+
+	if (node.internal.type === `MarkdownRemark`) {
+		const slug = createFilePath({ node, getNode });
+		console.log('onCreate slug', slug);
+
+		createNodeField({ node, name: 'slug', value: slug });
+	}
+};
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+	const { createPage } = actions;
+
+	const queryAllMarkdownData = await graphql(`
+		{
+			allMarkdownRemark(
+				sort: {
+					order: DESC
+					fields: [frontmatter___date, frontmatter___title]
+				}
+			) {
+				edges {
+					node {
+						fields {
+							slug
+						}
+					}
+				}
+			}
+		}
+	`);
+
+	// handling graphql error
+	if (queryAllMarkdownData.errors) {
+		reporter.panicOnBuild(`Error while running query`);
+		return;
+	}
+
+	// import post template component
+	const PostTemplateComponent = path.resolve(
+		__dirname,
+		'src/templates/post_template.tsx',
+	);
+
+	// page generating function
+	const generatePostPage = ({
+		node: {
+			fields: { slug },
+		},
+	}) => {
+		const pageOptions = {
+			path: slug,
+			component: PostTemplateComponent,
+			context: { slug },
+		};
+
+		createPage(pageOptions);
+	};
+
+	queryAllMarkdownData.data.allMarkdownRemark.edges.forEach(generatePostPage);
 };

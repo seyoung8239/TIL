@@ -23,6 +23,9 @@ type PropsType = {
 							date: string;
 							categories: string[];
 						};
+						fields: {
+							slug: string;
+						};
 					};
 				},
 			];
@@ -63,6 +66,9 @@ export const getPostList = graphql`
 						summary
 						date(formatString: "YYYY.MM.DD.")
 						categories
+					}
+					fields {
+						slug
 					}
 				}
 			}
