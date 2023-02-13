@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
-import GlobalStyle from '@components/common/GlobalStyle';
-import ProfileImage from '@components/main/ProfileImage';
+import GlobalStyle from '@components/@common/GlobalStyle';
 import { graphql } from 'gatsby';
 
 const Container = styled.div`
@@ -38,12 +37,10 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 		allMarkdownRemark: { edges },
 	},
 }) {
-	console.log(edges);
 	return (
 		<Container>
 			{JSON.stringify(edges)}
 			<GlobalStyle />
-			<ProfileImage />
 		</Container>
 	);
 };

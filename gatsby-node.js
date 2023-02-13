@@ -41,12 +41,9 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
 // generate a slug for each post data
 exports.onCreateNode = ({ node, getNode, actions }) => {
 	const { createNodeField } = actions;
-	console.log('onCreate');
 
 	if (node.internal.type === `MarkdownRemark`) {
 		const slug = createFilePath({ node, getNode });
-		console.log('onCreate slug', slug);
-
 		createNodeField({ node, name: 'slug', value: slug });
 	}
 };
