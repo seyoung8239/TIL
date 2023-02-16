@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import { useStaticQuery } from 'gatsby';
 
 export const usePostList = () => {
-	const { postList } = useStaticQuery(
+	const postList = useStaticQuery(
 		graphql`
 			query getPostList {
 				allMarkdownRemark(
@@ -29,5 +29,27 @@ export const usePostList = () => {
 			}
 		`,
 	);
+
 	return postList;
 };
+
+`query getPostList {
+				allMarkdownRemark(
+					sort: { frontmatter: { date: DESC, title: ASC } }
+				) {
+					edges {
+						node {
+							fields {
+								slug
+							}
+							frontmatter {
+								date
+								title
+								categories
+								thumbnail
+								summary
+							}
+						}
+					}
+				}
+			}`;
