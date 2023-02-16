@@ -1,4 +1,3 @@
-const patth = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 /**
@@ -34,6 +33,8 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
 				['@utils']: path.resolve(__dirname, 'src/utils'),
 				['@hooks']: path.resolve(__dirname, 'src/hooks'),
 				['@containers']: path.resolve(__dirname, 'src/containers'),
+				['@types']: path.resolve(__dirname, 'src/types'),
+				['@layouts']: path.resolve(__dirname, 'src/layouts'),
 			},
 		},
 	});
@@ -54,12 +55,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 	const queryAllMarkdownData = await graphql(`
 		{
-			allMarkdownRemark(
-				sort: {
-					order: DESC
-					fields: [frontmatter___date, frontmatter___title]
-				}
-			) {
+			allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
 				edges {
 					node {
 						fields {
@@ -73,14 +69,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 	// handling graphql error
 	if (queryAllMarkdownData.errors) {
-		reporter.panicOnBuild(`Error while running query`);
+		reporter.panicOnBuild(`Error occured while running fetch post list`);
 		return;
 	}
 
 	// import post template component
 	const PostTemplateComponent = path.resolve(
 		__dirname,
-		'src/templates/post_template.tsx',
+		'src/templates/PostTemplate.tsx',
 	);
 
 	// page generating function
@@ -90,7 +86,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 		},
 	}) => {
 		const pageOptions = {
-			path: slug,
+			path: `/post${slug}`,
 			component: PostTemplateComponent,
 			context: { slug },
 		};
