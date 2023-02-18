@@ -9,10 +9,10 @@
  */
 module.exports = {
 	siteMetadata: {
-		title: `My TIL Blog`,
-		description: `light blog I write down what I learn today`,
-		author: `@seyoung8239`,
-		siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+		title: 'seyoung8239.TIL',
+		description: '오늘 공부한 흔적들을 기록합니다.',
+		author: 'seyoung8239@gmail.com',
+		siteUrl: 'http://localhost',
 	},
 	plugins: [
 		{
