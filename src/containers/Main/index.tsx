@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { usePostList } from '@hooks/usePostList';
-import type { GraphQlResType } from '@types/GraphQL'
+import type { GraphQlMdResType } from '@types/GraphQlQueryTypes';
 import type { PostType } from '@types/Post';
 import { Container } from './styles';
 import { Link } from 'gatsby';
@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 const Main: FunctionComponent = () => {
 	const {
 		allMarkdownRemark: { edges },
-	}: GraphQlResType<PostType> = usePostList();
+	}: GraphQlMdResType<PostType> = usePostList();
 
 	return (
 		<Container>

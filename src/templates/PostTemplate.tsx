@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import HtmlRenderer from '@components/@common/HtmlRenderer';
 
-import { GraphQlResType } from 'types/graphQL';
+import { GraphQlResType } from '@types/GraphQlQueryTypes';
 import { PostType } from 'types/Post';
 
 type PostTemplateProps = {
