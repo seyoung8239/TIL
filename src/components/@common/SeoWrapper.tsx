@@ -15,7 +15,7 @@ interface PropsInterface {
 	children: ReactElement;
 }
 
-const Template: FunctionComponent<PropsInterface> = ({
+const SeoWrapper: FunctionComponent<PropsInterface> = ({
 	title,
 	description,
 	siteUrl,
@@ -45,9 +45,10 @@ const Template: FunctionComponent<PropsInterface> = ({
 				<meta property="og:site_name" content={title} />
 			</Helmet>
 			<GlobalStyle />
+			<html lang="ko" />
 			{children}
 		</>
 	);
 };
 
-export default Template;
+export default SeoWrapper;

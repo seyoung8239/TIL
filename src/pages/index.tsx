@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import Template from '@components/@common/Template';
+import SeoWrapper from '@components/@common/SeoWrapper';
 import Main from '@containers/Main';
 import { graphql } from 'gatsby';
 import type { GraphQlMetaResType } from '@types/GraphQlQueryTypes';
@@ -10,9 +10,9 @@ const IndexPage: FunctionComponent<GraphQlMetaResType> = function ({
 	},
 }) {
 	return (
-		<Template {...siteMetadata}>
+		<SeoWrapper {...siteMetadata}>
 			<Main />
-		</Template>
+		</SeoWrapper>
 	);
 };
 
