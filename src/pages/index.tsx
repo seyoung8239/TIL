@@ -50,6 +50,9 @@ export const getMetaData = graphql`
 						createdAt(formatString: "YYYY.MM.DD.")
 						categories
 					}
+					fields {
+						slug
+					}
 				}
 			}
 		}

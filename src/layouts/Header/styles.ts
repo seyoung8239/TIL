@@ -10,8 +10,10 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.h1`
+	font-size: 34px;
 	font-family: 'Merriweather';
 	font-style: italic;
+	color: #0e360b;
 	/* font-family: 'Noto Sans KR'; */
 `;
 
