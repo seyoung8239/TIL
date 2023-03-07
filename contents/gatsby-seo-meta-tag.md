@@ -1,5 +1,5 @@
 ---
-date: '2023-02-18'
+createdAt: '2023-02-18'
 title: 'Gatsby에서 meta tag를 통해 seo하기'
 categories: ['gatsby', 'seo', 'meta tag']
 thumbnail: ''

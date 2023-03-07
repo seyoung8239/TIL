@@ -1,5 +1,5 @@
 ---
-date: '2023-02-16'
+createdAt: '2023-02-16'
 title: 'TS type only import'
 categories: ['TypeScript', 'type only import']
 summary: '외부에서 타입을 가져와 사용할 때 반드시 알아야할 type only import'

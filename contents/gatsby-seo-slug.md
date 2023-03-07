@@ -1,5 +1,5 @@
 ---
-date: '2023-02-14'
+createdAt: '2023-02-14'
 title: 'Gatsby에서 slug를 활용해 SEO하기'
 categories: ['gatsby', 'seo', 'slug']
 summary: '포스팅의 키워드로 slug만들어 검색엔진을 최적화 해보자'

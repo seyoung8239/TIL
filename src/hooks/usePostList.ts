@@ -5,7 +5,7 @@ export const usePostList = () => {
 	const postList = useStaticQuery(
 		graphql`
 			query getPostList {
-				allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+				allMarkdownRemark(sort: { frontmatter: { createdAt: DESC } }) {
 					edges {
 						node {
 							id

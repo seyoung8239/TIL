@@ -3,7 +3,7 @@ export interface PostType {
 	frontmatter: {
 		title: string;
 		summary: string;
-		date: string;
+		createdAt: string;
 		categories: string[];
 	};
 	fields: {

@@ -1,5 +1,5 @@
 ---
-date: '2023-02-18'
+createdAt: '2023-02-18'
 title: 'SSG/SSR 프로젝트에서 webAPI 사용하기'
 categories: ['gatsby', 'webapi', 'ssg']
 summary: 'SSG/SSR 프로젝트에서 webAPI 사용시 발생하는 문제점과 해결방법'

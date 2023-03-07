@@ -1,5 +1,5 @@
 ---
-date: '2023-03-06'
+createdAt: '2023-03-06'
 title: 'JS 비트마스크'
 categories: ['js', 'algorithm', 'bitmask']
 summary: 'JS 알고리즘 풀이에서 사용할 수 있는 비트마스크 테크닉'
