@@ -2,8 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import HtmlRenderer from '@components/@common/HtmlRenderer';
 
-import { GraphQlMdResType } from '@customTypes/GraphQlQueryTypes';
-import { PostType } from '@customTypes/Post';
+import { GraphQlMdResType, PostType } from '@customTypes/gql';
 
 type PostTemplateProps = {
 	data: GraphQlMdResType<PostType>;
@@ -30,7 +29,7 @@ export const queryMarkdownDataBySlug = graphql`
 					frontmatter {
 						categories
 						summary
-						date(formatString: "YYYY.MM.DD.")
+						createdAt(formatString: "YYYY.MM.DD.")
 						thumbnail
 						title
 					}

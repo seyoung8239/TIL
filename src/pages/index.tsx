@@ -1,19 +1,30 @@
 import React, { FunctionComponent } from 'react';
 import SeoWrapper from '@components/@common/SeoWrapper';
 import Layout from '@layouts/Layout';
-import Main from '@containers/Main';
 import { graphql } from 'gatsby';
-import type { GraphQlMetaResType } from '@customTypes/GraphQlQueryTypes';
+import type {
+	GraphQlMdResType,
+	GraphQlMetaResType,
+	PostType,
+} from '@customTypes/gql';
+import Card from '@components/Card';
 
-const IndexPage: FunctionComponent<GraphQlMetaResType> = function ({
+interface PropsType {
+	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
+}
+
+const IndexPage: FunctionComponent<PropsType> = function ({
 	data: {
 		site: { siteMetadata },
+		allMarkdownRemark: { edges },
 	},
 }) {
 	return (
 		<SeoWrapper {...siteMetadata}>
 			<Layout>
-				<Main />
+				{edges.map(el => (
+					<Card key={el.node.id} data={el.node} />
+				))}
 			</Layout>
 		</SeoWrapper>
 	);
@@ -27,6 +38,19 @@ export const getMetaData = graphql`
 				description
 				siteUrl
 				title
+			}
+		}
+		allMarkdownRemark(sort: { frontmatter: { createdAt: DESC } }) {
+			edges {
+				node {
+					id
+					frontmatter {
+						title
+						summary
+						createdAt(formatString: "YYYY.MM.DD.")
+						categories
+					}
+				}
 			}
 		}
 	}
