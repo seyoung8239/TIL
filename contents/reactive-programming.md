@@ -1,3 +1,9 @@
+---
+date: '2023-03-04'
+title: '반응형 프로그래밍'
+categories: ['반응형', '함수형', '제어의 역전', '선언형', 'mvvm']
+summary: '반응형 프로그래밍이라는 패러다임을 이해해보자'
+---
 # 반응형 프로그래밍
 
 [프로그래밍 패러다임과 반응형 프로그래밍 그리고 Rx](https://velog.io/@teo/reactive-programming#패러다임의-전환-2---변경사항의-전파pull-→-push)
