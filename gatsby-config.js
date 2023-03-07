@@ -82,6 +82,17 @@ module.exports = {
 							rel: 'nofollow',
 						},
 					},
+					{
+						resolve: `gatsby-plugin-google-fonts`,
+						options: {
+							fonts: [
+								`Merriweather\:900,900i`,
+								`Noto+Sans+KR\:400,900`,
+								`Noto+Sans+KR\:100,300,400,500,700,900`,
+							],
+							display: 'swap',
+						},
+					},
 				],
 			},
 		},
