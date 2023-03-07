@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import SeoWrapper from '@components/@common/SeoWrapper';
 import Main from '@containers/Main';
 import { graphql } from 'gatsby';
-import type { GraphQlMetaResType } from '@types/GraphQlQueryTypes';
+import type { GraphQlMetaResType } from '@customTypes/GraphQlQueryTypes';
 
 const IndexPage: FunctionComponent<GraphQlMetaResType> = function ({
 	data: {

@@ -2,11 +2,11 @@ import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 import HtmlRenderer from '@components/@common/HtmlRenderer';
 
-import { GraphQlResType } from '@types/GraphQlQueryTypes';
-import { PostType } from 'types/Post';
+import { GraphQlMdResType } from '@customTypes/GraphQlQueryTypes';
+import { PostType } from '@customTypes/Post';
 
 type PostTemplateProps = {
-	data: GraphQlResType<PostType>;
+	data: GraphQlMdResType<PostType>;
 };
 
 const PostTemplate: FunctionComponent<PostTemplateProps> = function ({

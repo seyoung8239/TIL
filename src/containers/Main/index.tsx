@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { usePostList } from '@hooks/usePostList';
-import type { GraphQlMdResType } from '@types/GraphQlQueryTypes';
-import type { PostType } from '@types/Post';
+import type { GraphQlMdResType } from '@customTypes/GraphQlQueryTypes';
+import type { PostType } from '@customTypes/Post';
 import { Container } from './styles';
 import { Link } from 'gatsby';
 
