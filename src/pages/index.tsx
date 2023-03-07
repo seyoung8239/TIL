@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import SeoWrapper from '@components/@common/SeoWrapper';
+import Layout from '@layouts/Layout';
 import Main from '@containers/Main';
 import { graphql } from 'gatsby';
 import type { GraphQlMetaResType } from '@customTypes/GraphQlQueryTypes';
@@ -11,7 +12,9 @@ const IndexPage: FunctionComponent<GraphQlMetaResType> = function ({
 }) {
 	return (
 		<SeoWrapper {...siteMetadata}>
-			<Main />
+			<Layout>
+				<Main />
+			</Layout>
 		</SeoWrapper>
 	);
 };
