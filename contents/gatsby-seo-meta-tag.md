@@ -1,8 +1,8 @@
 ---
 createdAt: '2023-02-18'
 title: 'Gatsby에서 meta tag를 통해 seo하기'
+summary: 검색 최적화를 위한 여러가지 기술들을 알아보자
 categories: ['gatsby', 'seo', 'meta tag']
-thumbnail: ''
 ---
 ## SEO에서 Meta 태그가 가지는 중요성
 

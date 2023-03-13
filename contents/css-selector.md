@@ -1,3 +1,9 @@
+---
+createdAt: '2023-03-13'
+title: 'css selector'
+summary: '다양한 css selector 방식에 대해 알아보자'
+categories: ['css', 'selector']
+---
 # 2023-03-11 :: CSS Selector
 
 - CSS는 HTML과 같은 구조화 된 문서를 어떻게 렌더링할 것인지를 정의하기 위한 언어이다.
