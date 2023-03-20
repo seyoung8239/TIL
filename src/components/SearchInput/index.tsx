@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { useGatsbyPluginFusejs } from 'react-use-fusejs';
+import { useDebounceFuseSearch } from '@hooks/useFuseSearch';
 
 const SearchInput = () => {
-	const data = useStaticQuery(graphql`
+	const { fusejs } = useStaticQuery(graphql`
 		{
 			fusejs {
 				index
@@ -12,11 +12,7 @@ const SearchInput = () => {
 		}
 	`);
 	const [query, setQuery] = useState('');
-	// console.log(data);
-	// console.log(useGatsbyPluginFusejs);
-	// console.log(query, data.fusejs)
-	const result = useGatsbyPluginFusejs(query, data.fusejs);
-	console.log(result)
+	const result = useDebounceFuseSearch({ query, fusejs });
 
 	return (
 		<div>
