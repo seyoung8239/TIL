@@ -8,6 +8,7 @@ import type {
 	PostType,
 } from '@customTypes/gql';
 import Card from '@components/Card';
+import SearchInput from '@components/SearchInput';
 
 interface PropsType {
 	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
@@ -22,6 +23,7 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 	return (
 		<SeoWrapper {...siteMetadata}>
 			<Layout>
+				<SearchInput />
 				{edges.map(el => (
 					<Card key={el.node.id} data={el.node} />
 				))}
