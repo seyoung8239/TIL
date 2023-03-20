@@ -2,7 +2,7 @@
 title: HTTP1.1 / 2
 createdAt: 2023-03-19
 summary: HTTP1.1과 HTTP2의 차이점
-category: ['HTTP']
+categories: ['HTTP']
 ---
 # 2023-02-19 :: HTTP1.1 / 2
 
