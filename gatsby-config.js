@@ -87,6 +87,7 @@ module.exports = {
 						options: {
 							fonts: [
 								`Merriweather\:900,900i`,
+								`Song+Myung\:400`,
 								`Noto+Sans+KR\:400,900`,
 								`Noto+Sans+KR\:100,300,400,500,700,900`,
 							],

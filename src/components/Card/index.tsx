@@ -17,8 +17,8 @@ const Card: FunctionComponent<propsType> = ({
 	return (
 		<S.Card onClick={handleClickCard}>
 			<S.Title>{title}</S.Title>
-			<S.CreatedAt>{createdAt}</S.CreatedAt>
-			<S.Summary>{summary}</S.Summary>
+			<S.CreatedAt>🕰️ {createdAt}</S.CreatedAt>
+			<S.Summary>📃 {summary}</S.Summary>
 		</S.Card>
 	);
 };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useDebounceFuseSearch } from '@hooks/useFuseSearch';
+import * as S from './styles';
 
 const SearchInput = () => {
 	const { fusejs } = useStaticQuery(graphql`
@@ -15,18 +16,20 @@ const SearchInput = () => {
 	const result = useDebounceFuseSearch({ query, fusejs });
 
 	return (
-		<div>
-			<input
+		<S.SearchInput>
+			<S.Input
 				type="text"
 				value={query}
 				onChange={e => setQuery(e.target.value)}
 			/>
-			<ul>
-				{result.map(({ item }: { item: any }) => (
-					<li key={item.id}>{item.title}</li>
-				))}
-			</ul>
-		</div>
+			{!!result.length && (
+				<S.searchBox>
+					{result.map(({ item }: { item: any }) => (
+						<div key={item.id}>{item.title}</div>
+					))}
+				</S.searchBox>
+			)}
+		</S.SearchInput>
 	);
 };
 

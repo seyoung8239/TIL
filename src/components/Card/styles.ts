@@ -3,13 +3,11 @@ import styled from '@emotion/styled';
 export const Card = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 3px;
 	cursor: pointer;
-	border: 2px solid #444;
+	border-bottom: 1.3px solid #444;
 	padding: 25px 20px 15px;
-	border-radius: 5px;
 	width: 95%;
-	/* transform: perspective(1px) translateZ(0); */
 	transition-duration: 0.1s;
 
 	&:hover {
@@ -18,9 +16,9 @@ export const Card = styled.div`
 `;
 
 export const Title = styled.div`
-	font-size: 24px;
-	font-weight: 600;
-	margin-bottom: 25px;
+	font-size: 26px;
+	font-weight: 800;
+	margin-bottom: 20px;
 `;
 
 export const CreatedAt = styled.div`
