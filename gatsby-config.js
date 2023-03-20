@@ -96,5 +96,33 @@ module.exports = {
 				],
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-fusejs',
+			options: {
+				// 인덱스를 만들기 위한 전체 콘텐츠 쿼리
+				query: `
+					{
+						allMarkdownRemark {
+							nodes {
+								rawMarkdownBody
+								frontmatter {
+									title
+									summary
+									categories
+								}
+							}
+						}
+					}
+				`,
+				keys: ['title', 'summary', 'categories', 'body'],
+				normalizer: ({ data }) =>
+					data.allMarkdownRemark.nodes.map(node => ({
+						title: node.frontmatter.title,
+						summary: node.frontmatter.summary,
+						categories: node.frontmatter.categories,
+						body: node.rawMarkdownBody,
+					})),
+			},
+		},
 	],
 };
