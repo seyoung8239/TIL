@@ -5506,6 +5506,11 @@ gatsby-plugin-emotion@^8.5.0:
     "@babel/runtime" "^7.20.7"
     "@emotion/babel-preset-css-prop" "^11.10.0"
 
+gatsby-plugin-fusejs@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-fusejs/-/gatsby-plugin-fusejs-2.0.1.tgz#f5de1766d5f292e86cb22838d5ff419f5fbb416f"
+  integrity sha512-IERHWUU3Y4mv27DNspnW6k3V/lUPEsyH2IV2qjfAZPIDUAGwZOjJLrgmKuFtwFEEmgiKJfnWt6I8icDuS+OozQ==
+
 gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
@@ -9043,6 +9048,11 @@ react-side-effect@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
+
+react-use-fusejs@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-use-fusejs/-/react-use-fusejs-2.0.1.tgz#60a8d3b2c14d18daf974c02c094f736ec504e04d"
+  integrity sha512-3rvZ13V1xEyRLZ24hKNOnISQ0lIIBpj3d7EWNbUHZfuGnKYgusPRkhj6/nekU3DTtI2gmUPxuCppbw0uHHfZGg==
 
 react@^18.2.0:
   version "18.2.0"

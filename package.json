@@ -10,6 +10,7 @@
     "@types/react-helmet": "^6.1.6",
     "gatsby": "^5.5.0",
     "gatsby-plugin-emotion": "^8.5.0",
+    "gatsby-plugin-fusejs": "^2.0.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.6.0",
     "gatsby-plugin-manifest": "^5.5.0",
@@ -26,7 +27,8 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-use-fusejs": "^2.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.50.0",
