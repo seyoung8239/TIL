@@ -7,8 +7,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@types/react-helmet": "^6.1.6",
-    "fuse.js": "^6.6.2",
     "gatsby": "^5.5.0",
     "gatsby-plugin-emotion": "^8.5.0",
     "gatsby-plugin-fusejs": "^2.0.1",
@@ -25,13 +23,14 @@
     "gatsby-source-filesystem": "^5.5.0",
     "gatsby-transformer-remark": "^6.6.0",
     "gatsby-transformer-sharp": "^5.6.0",
+    "gatsby-use-fusejs": "^0.0.3",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-use-fusejs": "^2.0.1"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.6",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "eslint": "^8.33.0",

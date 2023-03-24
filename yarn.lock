@@ -5779,6 +5779,14 @@ gatsby-transformer-sharp@^5.6.0:
     semver "^7.3.8"
     sharp "^0.31.3"
 
+gatsby-use-fusejs@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-use-fusejs/-/gatsby-use-fusejs-0.0.3.tgz#f5c57e57b1b776bf07a8b2cebda0417b8d7eaad5"
+  integrity sha512-FsR6erU4AG8ZubGsluEbdXjdQSKmyBHHwznLoxZAfDIIN1guazX/WF23fBNy8mtldJSV6aFvjbrUDsYYs2M+9Q==
+  dependencies:
+    fuse.js "^6.6.2"
+    react "^18.2.0"
+
 gatsby-worker@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-worker/-/gatsby-worker-2.7.0.tgz#2d3cfced5ecac1d345d5c4e8b896aca282e7a72a"
@@ -9053,11 +9061,6 @@ react-side-effect@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
-
-react-use-fusejs@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/react-use-fusejs/-/react-use-fusejs-2.0.1.tgz#60a8d3b2c14d18daf974c02c094f736ec504e04d"
-  integrity sha512-3rvZ13V1xEyRLZ24hKNOnISQ0lIIBpj3d7EWNbUHZfuGnKYgusPRkhj6/nekU3DTtI2gmUPxuCppbw0uHHfZGg==
 
 react@^18.2.0:
   version "18.2.0"

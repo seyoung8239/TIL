@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { useDebounceFuseSearch } from '@hooks/useFuseSearch';
+// import { useDebounceFuseSearch } from 'gatsby-use-fusejs';
 import * as S from './styles';
 
 const SearchInput = () => {
