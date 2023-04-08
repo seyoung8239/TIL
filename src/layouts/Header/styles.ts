@@ -27,11 +27,6 @@ export const SubTitle = styled.h2`
 	font-style: italic;
 `;
 
-export const Divider = styled.div`
-	width: 1px;
-	background-color: black;
-`;
-
 export const IconContainer = styled.div`
 	display: flex;
 	justify-content: start;

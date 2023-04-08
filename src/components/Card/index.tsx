@@ -17,7 +17,7 @@ const Card: FunctionComponent<propsType> = ({
 	return (
 		<S.Card onClick={handleClickCard}>
 			<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-				<S.Title>{title}</S.Title>
+				<S.Title>{title} </S.Title>
 				<S.CreatedAt>{createdAt}</S.CreatedAt>
 			</div>
 			<S.Summary>{summary}</S.Summary>

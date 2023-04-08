@@ -8,7 +8,7 @@ const defaultStyle = css`
 		box-sizing: border-box;
 		/* font-family: 'Song Myung', serif, 'Noto Sans KR'; */
 		font-family: 'Noto Sans KR';
-		font-size: 18px;
+		/* font-size: 18px; */
 	}
 
 	html,

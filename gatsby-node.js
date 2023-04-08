@@ -16,6 +16,7 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
 				['@customTypes']: path.resolve(__dirname, 'src/customTypes'),
 				['@layouts']: path.resolve(__dirname, 'src/layouts'),
 				['@assets']: path.resolve(__dirname, 'src/assets'),
+				['@styles']: path.resolve(__dirname, 'src/styles'),
 			},
 		},
 	});

@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import SearchInput from '@components/SearchInput';
 import * as S from './styles';
+import * as CS from '@styles/commonStyle';
 
 import GithubIcon from '@assets/github.svg';
 import NotionIcon from '@assets/notion.svg';
@@ -13,9 +14,9 @@ const Header = () => {
 			<S.Title>
 				<Link to="/">TIL</Link>
 			</S.Title>
-			<S.Divider />
+			<CS.Divider />
 			<SearchInput />
-			<S.Divider />
+			<CS.Divider />
 			<S.IconContainer>
 				<div />
 				<a
@@ -32,7 +33,6 @@ const Header = () => {
 				>
 					<NotionIcon />
 				</a>
-
 				<div />
 			</S.IconContainer>
 		</S.Header>

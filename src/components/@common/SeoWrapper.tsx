@@ -5,7 +5,7 @@ import React, {
 } from 'react';
 import { Helmet } from 'react-helmet';
 
-import GlobalStyle from '@components/@common/GlobalStyle';
+import GlobalStyle from '@styles/GlobalStyle';
 
 interface PropsInterface {
 	title: string;

@@ -9,6 +9,7 @@ import type {
 } from '@customTypes/gql';
 import Card from '@components/Card';
 import Header from '@layouts/Header';
+import Footer from '@layouts/Footer';
 
 interface PropsType {
 	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
@@ -20,6 +21,7 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 		allMarkdownRemark: { edges },
 	},
 }) {
+	console.log(edges, edges.length);
 	return (
 		<SeoWrapper {...siteMetadata}>
 			<>
@@ -29,6 +31,7 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 						<Card key={el.node.id} data={el.node} />
 					))}
 				</Layout>
+				<Footer />
 			</>
 		</SeoWrapper>
 	);

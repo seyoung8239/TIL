@@ -25,6 +25,7 @@ const SearchInput = () => {
 					type="text"
 					value={query}
 					onChange={e => setQuery(e.target.value)}
+					placeholder="제목 혹은 키워드로 검색"
 				/>
 			</S.InputWrapper>
 

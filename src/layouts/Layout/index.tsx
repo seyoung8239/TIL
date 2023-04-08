@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { FunctionComponent } from 'react';
 import * as S from './styles';
+import * as CS from '@styles/commonStyle';
 
 interface LayoutProps {
 	children: ReactNode;
@@ -8,11 +9,11 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
-		<S.Container>
-			<S.Pad />
-			<S.Divider />
+		<S.Layout>
+			<CS.Pad />
+			<CS.Divider />
 			<S.Main>{children}</S.Main>
-		</S.Container>
+		</S.Layout>
 	);
 };
 
