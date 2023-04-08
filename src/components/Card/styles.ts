@@ -6,19 +6,19 @@ export const Card = styled.div`
 	gap: 3px;
 	cursor: pointer;
 	border-bottom: 1.3px solid #444;
-	padding: 25px 20px 15px;
+	padding: 10px 20px;
 	width: 100%;
 	transition-duration: 0.1s;
 
 	&:hover {
-		transform: scale(1.02);
+		transform: scale(1.01);
 	}
 `;
 
 export const Title = styled.div`
-	font-size: 26px;
+	font-size: 18px;
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin-bottom: 6px;
 `;
 
 export const CreatedAt = styled.div`

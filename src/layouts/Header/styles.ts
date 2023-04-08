@@ -34,7 +34,9 @@ export const Divider = styled.div`
 
 export const IconContainer = styled.div`
 	display: flex;
+	justify-content: start;
 	align-items: center;
 	gap: 15px;
-	width: 15%;
+	min-width: 100px;
+	width: 10%;
 `;

@@ -16,9 +16,11 @@ const Card: FunctionComponent<propsType> = ({
 	};
 	return (
 		<S.Card onClick={handleClickCard}>
-			<S.Title>{title}</S.Title>
-			<S.CreatedAt>🕰️ {createdAt}</S.CreatedAt>
-			<S.Summary>📃 {summary}</S.Summary>
+			<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+				<S.Title>{title}</S.Title>
+				<S.CreatedAt>{createdAt}</S.CreatedAt>
+			</div>
+			<S.Summary>{summary}</S.Summary>
 		</S.Card>
 	);
 };

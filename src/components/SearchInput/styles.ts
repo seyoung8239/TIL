@@ -23,7 +23,7 @@ export const searchBox = styled.div`
 	top: 50px;
 	width: 100%;
 
-	background-color: rgba(0, 100, 0, 0.05);
+	background-color: #cad9cc;
 	padding: 15px 25px;
 
 	display: flex;
