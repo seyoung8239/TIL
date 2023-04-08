@@ -1,14 +1,25 @@
 import styled from '@emotion/styled';
 
-export const Layout = styled.div`
-	max-width: 780px;
-`;
 export const Container = styled.div`
-	max-width: 780px;
+	display: flex;
+`
+
+export const Pad = styled.div`
+	background-color: white;
+	width: 15%;
+	z-index: 1;
+`
+
+export const Divider = styled.div`
+	background-color: black;
+	width: 1px;
+`
+
+export const Main = styled.div`
+	width: 85%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 16px;
 	padding-bottom: 70px;
 `;

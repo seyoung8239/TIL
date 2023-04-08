@@ -7,7 +7,7 @@ export const Card = styled.div`
 	cursor: pointer;
 	border-bottom: 1.3px solid #444;
 	padding: 25px 20px 15px;
-	width: 95%;
+	width: 100%;
 	transition-duration: 0.1s;
 
 	&:hover {

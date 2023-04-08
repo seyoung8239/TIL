@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-import { FunctionComponent, ReactElement } from 'react';
-import Header from '@layouts/Header';
+import { FunctionComponent } from 'react';
 import * as S from './styles';
 
 interface LayoutProps {
@@ -9,10 +8,11 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
-		<>
-			<Header />
-			<S.Container>{children}</S.Container>
-		</>
+		<S.Container>
+			<S.Pad />
+			<S.Divider />
+			<S.Main>{children}</S.Main>
+		</S.Container>
 	);
 };
 

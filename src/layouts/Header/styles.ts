@@ -8,6 +8,7 @@ export const Header = styled.div`
 	border-bottom: 1px solid black;
 	height: 50px;
 	background-color: white;
+	z-index: 100;
 `;
 
 export const Title = styled.h1`
@@ -15,8 +16,7 @@ export const Title = styled.h1`
 	font-family: 'Merriweather';
 	line-height: 50px;
 	font-weight: 700;
-	flex-grow: 1;
-	padding: 0px 10px;
+	width: 15%;
 	text-align: center;
 `;
 
@@ -35,8 +35,6 @@ export const Divider = styled.div`
 export const IconContainer = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
-	gap: 10px;
-	padding-left: 10px;
-	flex-grow: 1;
+	gap: 15px;
+	width: 15%;
 `;

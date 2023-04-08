@@ -10,6 +10,7 @@ const Header = () => {
 			<SearchInput />
 			<S.Divider />
 			<S.IconContainer>
+				<div></div>
 				<svg
 					role="img"
 					width="24"

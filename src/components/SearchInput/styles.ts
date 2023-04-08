@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const SearchInput = styled.div`
-	flex-grow: 8;
+	flex-grow: 7;
 	display: flex;
 	position: relative;
 `;
