@@ -98,7 +98,7 @@ const Template = () => {
 ```jsx
 module.exports = {
 	siteMetadata: {
-		title: 'seyoung8239.TIL',
+		title: 'TIL',
 		description: '오늘 공부한 흔적들을 기록합니다.',
 		author: 'seyoung8239',
 		siteUrl: '',
