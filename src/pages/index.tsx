@@ -21,7 +21,6 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 		allMarkdownRemark: { edges },
 	},
 }) {
-	console.log(edges, edges.length);
 	return (
 		<SeoWrapper {...siteMetadata}>
 			<>
