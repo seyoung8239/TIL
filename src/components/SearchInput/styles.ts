@@ -6,12 +6,21 @@ export const SearchInput = styled.div`
 	position: relative;
 `;
 
-export const Input = styled.input`
+export const InputWrapper = styled.div`
 	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	justify-content: space-around;
+	background-color: rgba(0, 100, 0, 0.1);
+`;
+
+export const Input = styled.input`
+	flex-grow: 1;
 	padding: 10px 20px;
 	outline: none;
 	border: 0;
-	background-color: rgba(0, 100, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0);
 
 	font-size: 16px;
 	font-weight: 400;
