@@ -106,17 +106,22 @@ module.exports = {
 									summary
 									categories
 								}
+								fields {
+        							slug
+    							}
 							}
+							
 						}
 					}
 				`,
-				keys: ['title', 'summary', 'categories', 'body'],
+				keys: ['title', 'summary', 'categories', 'body', 'slug'],
 				normalizer: ({ data }) =>
 					data.allMarkdownRemark.nodes.map(node => ({
 						title: node.frontmatter.title,
 						summary: node.frontmatter.summary,
 						categories: node.frontmatter.categories,
 						body: node.rawMarkdownBody,
+						slug: node.fields.slug,
 					})),
 			},
 		},

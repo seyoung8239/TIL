@@ -10,9 +10,13 @@ export const InputWrapper = styled.div`
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: 15px;
+	padding: 0px 15px;
 	justify-content: space-around;
-	background-color: rgba(0, 100, 0, 0.1);
+	background-color: #d8ebd5;
+	svg:hover:last-child {
+		color: #111;
+		cursor: pointer;
+	}
 `;
 
 export const Input = styled.input`
@@ -27,18 +31,28 @@ export const Input = styled.input`
 	font-family: 'Noto Sans KR';
 `;
 
-export const searchBox = styled.div`
+export const SearchBox = styled.div`
+	box-sizing: content-box;
 	position: absolute;
 	top: 50px;
 	width: 100%;
 
-	background-color: #cad9cc;
-	padding: 15px 25px;
+	background-color: #a8c2a5;
+	border-right: 1px solid black;
 
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	font-size: 16px;
+	font-weight: 500;
+`;
 
-	font-size: 14px;
-	font-weight: 400;
+export const SearchItem = styled.div`
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding: 12px 15px;
+	&:hover {
+		color: #d8ebd5;
+	}
 `;
