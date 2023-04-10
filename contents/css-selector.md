@@ -162,7 +162,7 @@ categories: ['css', 'selector']
 
 :nth-child vs :nth-of-type
 
-[The Difference Between :nth-child and :nth-of-type | CSS-Tricks](https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/)
+![The Difference Between :nth-child and :nth-of-type | CSS-Tricks](https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/)
 
 - nth-child는 부모의 자식 모두에 해당
 - nth-of-type은 부모의 자식 중 같은 타입만 해당

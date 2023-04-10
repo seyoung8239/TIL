@@ -11,8 +11,6 @@ categories: ['gatsby', 'seo', 'meta tag']
 - 사용자에게 어떤 사이트인지 알려줌
 - SNS에서 링크를 공유했을 때 부가적인 정보 표현
 
-![스크린샷 2023-02-14 오후 3.04.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d94761a9-4d82-4021-9e0a-2774ac86e288/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.04.06.png)
-
 ### React-Helmet
 
 React 서비스에서 HTML 파일을 작성하듯이 meta tag를 추가할 수 있다
@@ -29,19 +27,19 @@ React 서비스에서 HTML 파일을 작성하듯이 meta tag를 추가할 수 �
 
 일반벅인 메타 태그의 형식은 아니지만 해당 페이지의 제목을 나타내므로 SEO에서 가장 중요한 역할을 한다
 
-1. **Description**
+2. **Description**
 
 해당 페이지의 설명을 확인할 수 있다
 
-1. **Viewport**
+3. **Viewport**
 
 검색 엔진에서 모바일 친화성을 아주 중요하게 보는데, 이를 위한 태그이다
 
-1. **Content Type**
+4. **Content Type**
 
 브라우저가 데이터를 어떻게 읽을지 결정한다
 
-1. **Social Meta Tag**
+5. **Social Meta Tag**
 
 여러 SNS 서비스를 위한 Meta Tag이다
 
