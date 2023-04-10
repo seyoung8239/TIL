@@ -2,6 +2,8 @@ import React, { ReactNode } from 'react';
 import { FunctionComponent } from 'react';
 import * as S from './styles';
 import * as CS from '@styles/commonStyle';
+import Header from '@layouts/Header';
+import Footer from '@layouts/Footer';
 
 interface LayoutProps {
 	children: ReactNode;
@@ -9,11 +11,15 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
-		<S.Layout>
-			<CS.Pad />
-			<CS.Divider />
-			<S.Main>{children}</S.Main>
-		</S.Layout>
+		<>
+			<Header />
+			<S.Layout>
+				<CS.Pad />
+				<CS.Divider />
+				<S.Main>{children}</S.Main>
+			</S.Layout>
+			<Footer />
+		</>
 	);
 };
 

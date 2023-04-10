@@ -8,8 +8,7 @@ import type {
 	PostType,
 } from '@customTypes/gql';
 import Card from '@components/Card';
-import Header from '@layouts/Header';
-import Footer from '@layouts/Footer';
+import GlobalStyle from '@styles/GlobalStyle';
 
 interface PropsType {
 	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
@@ -24,13 +23,12 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 	return (
 		<SeoWrapper {...siteMetadata}>
 			<>
-				<Header />
+				<GlobalStyle />
 				<Layout>
 					{edges.map(el => (
 						<Card key={el.node.id} data={el.node} />
 					))}
 				</Layout>
-				<Footer />
 			</>
 		</SeoWrapper>
 	);

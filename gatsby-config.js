@@ -82,14 +82,14 @@ module.exports = {
 							rel: 'nofollow',
 						},
 					},
-					{
-						resolve: `gatsby-plugin-google-fonts`,
-						options: {
-							fonts: [`Noto+Sans+KR\: 400,600,700`],
-							display: 'swap',
-						},
-					},
 				],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-google-fonts`,
+			options: {
+				fonts: [`Noto+Sans+KR\: 400,600,700`],
+				display: 'swap',
 			},
 		},
 		{
