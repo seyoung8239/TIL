@@ -7,4 +7,5 @@ https://tilmain.gatsbyjs.io/
 - React
 - Emotion/styled
 - GraphQL
+- FuseJS
 
