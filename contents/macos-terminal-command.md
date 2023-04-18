@@ -1,5 +1,5 @@
 ---
-title: [WIP]Mac 터미널 명령어
+title: (WIP)Mac 터미널 명령어
 createdAt: 2023-04-18
 summary: MacOs에서 사용할 수 있는 다양한 터미널 명령어 모음
 categories: [cli, terminal, commnad]
