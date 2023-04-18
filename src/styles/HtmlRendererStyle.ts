@@ -7,6 +7,9 @@ export const ContentWrapper = styled.div`
 	min-height: 95vh;
 	a {
 		color: green;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	p {
 		margin-bottom: 15px;
@@ -33,7 +36,7 @@ export const ContentWrapper = styled.div`
 		padding-left: 0;
 		margin-bottom: 15px;
 	}
-    li {
-        margin-bottom: 5px;
-    }
+	li {
+		margin-bottom: 5px;
+	}
 `;

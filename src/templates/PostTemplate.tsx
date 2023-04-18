@@ -6,6 +6,7 @@ import { GraphQlMdResType, PostType } from '@customTypes/gql';
 import GlobalStyle from '@styles/GlobalStyle';
 import Layout from '@layouts/Layout';
 import Header from '@layouts/Header';
+import ScrollToTopBtn from '@components/ScrollToTopBtn';
 
 type PostTemplateProps = {
 	data: GraphQlMdResType<PostType>;
@@ -23,6 +24,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 			<Layout>
 				<HtmlRenderer htmlString={edges[0].node.html} />
 			</Layout>
+			<ScrollToTopBtn />
 		</>
 	);
 };
