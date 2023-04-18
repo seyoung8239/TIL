@@ -1,10 +1,9 @@
 ---
-title: '(번역)React 프로젝트에서 어떻게 비즈니스 로직을 분리할까?'
+title: '[번역]React에서 비즈니스 로직 분리하기'
 createdAt: '2023-04-12'
 summary: 'OOP와 Model 계층을 활용해서 더 안전하고 유연하게 비즈니스 로직 처리하기'
 categories: ['react', 'business logic', 'OOP']
 ---
-# (번역)React 프로젝트에서 어떻게 비즈니스 로직을 분리할까?
 
 [The right way to place business logic in your React application](https://itnext.io/the-right-way-to-place-business-logic-in-your-react-application-8bf16145f48d)
 
