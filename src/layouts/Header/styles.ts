@@ -11,7 +11,7 @@ export const Header = styled.div`
 	z-index: 100;
 `;
 
-export const Title = styled.h1`
+export const MainTitle = styled.h1`
 	font-size: 22px;
 	font-family: 'Merriweather';
 	line-height: 50px;
@@ -20,11 +20,20 @@ export const Title = styled.h1`
 	text-align: center;
 `;
 
-export const SubTitle = styled.h2`
-	font-family: 'Noto Sans KR';
+export const TitleWrapper = styled.div`
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	flex-grow: 7;
+`;
+
+export const PostTitle = styled.h2`
+	font-family: 'Merriweather';
+	font-size: 22px;
+	line-height: 50px;
 	font-weight: 500;
-	font-size: 21px;
-	font-style: italic;
+	width: 100%;
+	padding-left: 20px;
+	text-align: left;
 `;
 
 export const IconContainer = styled.div`

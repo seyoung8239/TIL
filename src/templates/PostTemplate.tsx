@@ -5,6 +5,7 @@ import { GraphQlMdResType, PostType } from '@customTypes/gql';
 
 import GlobalStyle from '@styles/GlobalStyle';
 import Layout from '@layouts/Layout';
+import Header from '@layouts/Header';
 
 type PostTemplateProps = {
 	data: GraphQlMdResType<PostType>;
@@ -18,6 +19,7 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 	return (
 		<>
 			<GlobalStyle />
+			<Header title={edges[0].node.frontmatter.title} />
 			<Layout>
 				<HtmlRenderer htmlString={edges[0].node.html} />
 			</Layout>

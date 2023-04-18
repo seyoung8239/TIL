@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Link } from 'gatsby';
 
 import SearchInput from '@components/SearchInput';
 import * as S from './styles';
-import * as CS from '@styles/commonStyle';
 
 import GithubIcon from '@assets/github.svg';
 import NotionIcon from '@assets/notion.svg';
 
-const Header = () => {
+interface HeaderProps {
+	title?: string;
+}
+const Header: FunctionComponent<HeaderProps> = ({ title }) => {
 	return (
 		<S.Header>
-			<S.Title>
+			<S.MainTitle>
 				<Link to="/">TIL</Link>
-			</S.Title>
-			<CS.Divider />
-			<SearchInput />
-			<CS.Divider />
+			</S.MainTitle>
+			<S.TitleWrapper>
+				{title ? <S.PostTitle>{title}</S.PostTitle> : <SearchInput />}
+			</S.TitleWrapper>
 			<S.IconContainer>
 				<div />
 				<a

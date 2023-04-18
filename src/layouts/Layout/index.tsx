@@ -11,8 +11,7 @@ interface LayoutProps {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 	return (
-		<>
-			<Header />
+		<>	
 			<S.Layout>
 				<CS.Pad />
 				<S.Main>{children}</S.Main>

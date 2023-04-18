@@ -9,6 +9,7 @@ import type {
 } from '@customTypes/gql';
 import Card from '@components/Card';
 import GlobalStyle from '@styles/GlobalStyle';
+import Header from '@layouts/Header';
 
 interface PropsType {
 	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
@@ -24,6 +25,7 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 		<SeoWrapper {...siteMetadata}>
 			<>
 				<GlobalStyle />
+				<Header />
 				<Layout>
 					{edges.map(el => (
 						<Card key={el.node.id} data={el.node} />
