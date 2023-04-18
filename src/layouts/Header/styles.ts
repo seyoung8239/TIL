@@ -26,7 +26,7 @@ export const TitleWrapper = styled.div`
 	flex-grow: 7;
 `;
 
-export const PostTitle = styled.h2`
+export const PostTitle = styled.h1`
 	font-family: 'Merriweather';
 	font-size: 22px;
 	line-height: 50px;

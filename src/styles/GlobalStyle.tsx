@@ -6,9 +6,7 @@ const defaultStyle = css`
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
-		/* font-family: 'Song Myung', serif, 'Noto Sans KR'; */
 		font-family: 'Noto Sans KR';
-		/* font-size: 18px; */
 	}
 
 	html,
@@ -23,6 +21,7 @@ const defaultStyle = css`
 		text-decoration: none;
 		cursor: pointer;
 	}
+	
 `;
 
 const GlobalStyle: FunctionComponent = function () {
