@@ -31,8 +31,6 @@ module.exports = {
 				path: `${__dirname}/contents`,
 			},
 		},
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
@@ -47,10 +45,19 @@ module.exports = {
 				icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
 			},
 		},
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [
+					{
+						resolve: 'gatsby-remark-images',
+						options: {
+							maxWidth: 500,
+							quality: 100,
+							withWebp: true,
+						},
+					},
 					{
 						resolve: 'gatsby-remark-smartypants',
 						options: {
@@ -61,14 +68,6 @@ module.exports = {
 						resolve: 'gatsby-remark-prismjs',
 						options: {
 							classPrefix: 'language-',
-						},
-					},
-					{
-						resolve: 'gatsby-remark-images',
-						options: {
-							maxWidth: 768,
-							quality: 100,
-							withWebp: true,
 						},
 					},
 					{
