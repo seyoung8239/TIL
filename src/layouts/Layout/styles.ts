@@ -15,6 +15,7 @@ export const Main = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border-left: 1px solid black;
 
 	div:last-child {
 		border-bottom: none;

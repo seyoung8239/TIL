@@ -15,7 +15,6 @@ const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
 			<Header />
 			<S.Layout>
 				<CS.Pad />
-				<CS.Divider />
 				<S.Main>{children}</S.Main>
 			</S.Layout>
 			<Footer />

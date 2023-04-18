@@ -15,4 +15,7 @@ export const Content = styled.div`
 	width: 70%;
 	color: #999;
 	font-size: 12px;
+	
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 `;
