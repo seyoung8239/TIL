@@ -10,7 +10,9 @@ const ContentWrapper = styled.div`
 	width: 100%;
 	max-width: 800px;
 	min-height: 95vh;
-
+	a {
+		color: green;
+	}
 	p {
 		margin-bottom: 15px;
 		line-height: 25px;
@@ -27,7 +29,6 @@ const ContentWrapper = styled.div`
 	}
 	h3,
 	h4 {
-		/* text-decoration: underline; */
 		color: #435440;
 		margin: 10px 0px;
 	}
