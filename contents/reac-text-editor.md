@@ -74,3 +74,26 @@ export default DraftEditor;
 - `react-draft-wysiwyg` api의 스펙에 맞게 초기화한다.
 
 ### @toast-ui/react-editor
+```jsx
+import React from "react";
+import dynamic from "next/dynamic";
+import "@toast-ui/editor/dist/toastui-editor.css";
+
+const Editor = dynamic(
+    () => import("@toast-ui/react-editor").then((tui) => tui.Editor),
+    { ssr: false }
+);
+
+const Tui = () => {
+    return (
+        <Editor
+            initialValue="hello react editor world!"
+            previewStyle="vertical"
+            height="200px"
+            initialEditType="wysiwyg"
+        />
+    );
+};
+
+export default Tui;
+```
