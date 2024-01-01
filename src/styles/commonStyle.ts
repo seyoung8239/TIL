@@ -14,4 +14,5 @@ export const Pad = styled.div`
 	background-color: white;
 	width: 15%;
 	z-index: 1;
+	flex-shrink: 0;
 `;

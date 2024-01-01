@@ -5,7 +5,7 @@ import * as CS from '@styles/commonStyle';
 const Footer = () => {
 	return (
 		<S.Footer>
-			<CS.Pad />
+			<S.PadLeft />
 			<S.Content>
 				<div>Copyright ©seyoung8239.</div>
 			</S.Content>

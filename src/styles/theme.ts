@@ -7,4 +7,9 @@ export const theme = {
 		GREEN200: '#bbf7d0',
 		GREEN300: '#86efac',
 	},
-};
+	screen: {
+		sm: '576px',
+	},
+} as const;
+
+export type CustomTheme = typeof theme;

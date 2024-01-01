@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import SearchInput from '@components/SearchInput';
 import * as S from './styles';
 
+import mainIcon from '@assets/mainIcon.png';
 import GithubIcon from '@assets/github.svg';
 import NotionIcon from '@assets/notion.svg';
 
@@ -13,9 +14,12 @@ interface HeaderProps {
 const Header: FunctionComponent<HeaderProps> = ({ title }) => {
 	return (
 		<S.Header>
-			<S.MainTitle>
-				<Link to="/">TIL</Link>
-			</S.MainTitle>
+			<S.MainTitleContainer>
+				<S.MainTitle to="/">
+					<S.TitleImg src={mainIcon} alt="main-icon" />
+					<S.TitleText>TIL</S.TitleText>
+				</S.MainTitle>
+			</S.MainTitleContainer>
 			<S.TitleWrapper>
 				{title ? <S.PostTitle>{title}</S.PostTitle> : <SearchInput />}
 			</S.TitleWrapper>
