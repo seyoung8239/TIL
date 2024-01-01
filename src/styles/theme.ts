@@ -9,6 +9,8 @@ export const theme = {
 	},
 	screen: {
 		sm: '576px',
+		md: '768px',
+		lg: '992px',
 	},
 } as const;
 

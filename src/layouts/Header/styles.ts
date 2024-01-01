@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 
 export const Header = styled.div`
 	display: flex;
-	position: sticky;
 	top: 0px;
 	box-shadow: 1px;
 	border-bottom: 1px solid black;
@@ -57,6 +56,10 @@ export const PostTitle = styled.h1`
 	width: 100%;
 	padding-left: 20px;
 	text-align: left;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 `;
 
 export const IconContainer = styled.div`

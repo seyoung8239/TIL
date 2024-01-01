@@ -12,7 +12,6 @@ import GlobalStyle from '@styles/GlobalStyle';
 import Header from '@layouts/Header';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from '@styles/theme';
-import * as CS from '@styles/commonStyle';
 
 interface PropsType {
 	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
@@ -31,10 +30,11 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 				<Header />
 				<Layout>
 					{edges.map((el, i) => (
-						<>
-							<Card key={el.node.id} data={el.node} />
-							{i !== edges.length - 1 && <CS.DividerVert />}
-						</>
+						<Card
+							key={el.node.id}
+							data={el.node}
+							isLast={i === edges.length - 1}
+						/>
 					))}
 				</Layout>
 			</ThemeProvider>

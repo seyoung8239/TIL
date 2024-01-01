@@ -13,8 +13,7 @@ export const Pad = styled(CS.Pad)`
 `;
 
 export const Main = styled.div`
-	min-width: 400px;
-	margin: auto;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

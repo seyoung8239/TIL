@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
 export const ContentWrapper = styled.div`
-	padding: 40px;
-	width: 100%;
-	max-width: 800px;
+	margin: 30px auto 0;
+
+	max-width: 95%;
 	min-height: 95vh;
 	a {
 		color: green;
