@@ -5,6 +5,7 @@ import { useDebounceFuseSearch } from '@hooks/useFuseSearch';
 import * as S from './styles';
 import SearchIcon from '@assets/search.svg';
 import CancelIcon from '@assets/cancel.svg';
+import { useTheme } from '@emotion/react';
 
 const SearchInput = () => {
 	const { fusejs } = useStaticQuery(graphql`
@@ -17,11 +18,13 @@ const SearchInput = () => {
 	`);
 	const [query, setQuery] = useState('');
 	const result = useDebounceFuseSearch({ query, fusejs });
+	const theme = useTheme();
 
 	return (
 		<S.SearchInput>
 			<S.InputWrapper>
-				<SearchIcon />
+				<SearchIcon fill={theme.colors.GRAY800} />
+
 				<S.Input
 					type="text"
 					value={query}
