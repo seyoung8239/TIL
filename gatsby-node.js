@@ -20,6 +20,18 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
 				['@styles']: path.resolve(__dirname, 'src/styles'),
 			},
 		},
+		module: {
+			rules: [
+				{
+					test: /\.(png|jpe?g|gif)$/i,
+					use: [
+						{
+							loader: 'file-loader',
+						},
+					],
+				},
+			],
+		},
 	});
 };
 
