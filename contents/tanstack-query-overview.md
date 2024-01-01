@@ -1,5 +1,5 @@
 ---
-title: TanStack Query\: Overview
+title: 'TanStack Query: Overview'
 createdAt: 2023-04-24
 summary: 서버상태의 특징과 tanstack query를 사용했을 때의 이점에 대해 알아보자.
 categories: [tanstack query]
