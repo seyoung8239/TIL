@@ -7,6 +7,8 @@ import GlobalStyle from '@styles/GlobalStyle';
 import Layout from '@layouts/Layout';
 import Header from '@layouts/Header';
 import ScrollToTopBtn from '@components/ScrollToTopBtn';
+import { ThemeProvider } from '@emotion/react';
+import { theme } from '@styles/theme';
 
 type PostTemplateProps = {
 	data: GraphQlMdResType<PostType>;
@@ -18,14 +20,14 @@ const PostTemplate: FunctionComponent<PostTemplateProps> = function ({
 	},
 }) {
 	return (
-		<>
+		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			<Header title={edges[0].node.frontmatter.title} />
 			<Layout>
 				<HtmlRenderer htmlString={edges[0].node.html} />
 			</Layout>
 			<ScrollToTopBtn />
-		</>
+		</ThemeProvider>
 	);
 };
 

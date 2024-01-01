@@ -1,12 +1,13 @@
 import React, { FunctionComponent } from 'react';
-import { Global, css } from '@emotion/react';
+import { Global, Theme, css, useTheme } from '@emotion/react';
 
-const defaultStyle = css`
+const getDefaultStyle = ({ theme }: { theme: Theme }) => css`
 	* {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
 		font-family: 'Noto Sans KR';
+		color: ${theme.colors.GRAY800};
 	}
 
 	html,
@@ -21,11 +22,12 @@ const defaultStyle = css`
 		text-decoration: none;
 		cursor: pointer;
 	}
-	
 `;
 
 const GlobalStyle: FunctionComponent = function () {
-	return <Global styles={defaultStyle} />;
+	const theme = useTheme();
+
+	return <Global styles={getDefaultStyle({ theme })} />;
 };
 
 export default GlobalStyle;

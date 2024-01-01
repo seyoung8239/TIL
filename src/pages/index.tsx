@@ -10,6 +10,8 @@ import type {
 import Card from '@components/Card';
 import GlobalStyle from '@styles/GlobalStyle';
 import Header from '@layouts/Header';
+import { ThemeProvider } from '@emotion/react';
+import { theme } from '@styles/theme';
 
 interface PropsType {
 	data: GraphQlMetaResType & GraphQlMdResType<PostType>;
@@ -23,7 +25,7 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 }) {
 	return (
 		<SeoWrapper {...siteMetadata}>
-			<>
+			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				<Header />
 				<Layout>
@@ -31,7 +33,7 @@ const IndexPage: FunctionComponent<PropsType> = function ({
 						<Card key={el.node.id} data={el.node} />
 					))}
 				</Layout>
-			</>
+			</ThemeProvider>
 		</SeoWrapper>
 	);
 };

@@ -5,8 +5,6 @@ import React, {
 } from 'react';
 import { Helmet } from 'react-helmet';
 
-import GlobalStyle from '@styles/GlobalStyle';
-
 interface PropsInterface {
 	title: string;
 	description: string;
@@ -44,7 +42,6 @@ const SeoWrapper: FunctionComponent<PropsInterface> = ({
 				<meta property="og:url" content={siteUrl} />
 				<meta property="og:site_name" content={title} />
 			</Helmet>
-			<GlobalStyle />
 			<html lang="ko" />
 			{children}
 		</>
