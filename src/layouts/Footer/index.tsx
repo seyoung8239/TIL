@@ -7,7 +7,7 @@ const Footer = () => {
 		<S.Footer>
 			<CS.Pad />
 			<S.Content>
-				<div>Frontend Developer, @Seyoung Park</div>
+				<div>Copyright ©seyoung8239.</div>
 			</S.Content>
 			<CS.Pad />
 		</S.Footer>

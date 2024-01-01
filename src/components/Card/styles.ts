@@ -5,7 +5,6 @@ export const Card = styled.article`
 	flex-direction: column;
 	gap: 3px;
 	cursor: pointer;
-	border-bottom: 1px solid #444;
 	padding: 10px 20px;
 	width: 100%;
 	transition-duration: 0.1s;
