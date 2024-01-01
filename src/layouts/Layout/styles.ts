@@ -13,7 +13,10 @@ export const Pad = styled(CS.Pad)`
 `;
 
 export const Main = styled.div`
-	width: 100%;
+	width: 85%;
+	@media screen and (max-width: ${({ theme }) => theme.screen.sm}) {
+		width: 100%;
+	}
 	display: flex;
 	flex-direction: column;
 	align-items: center;

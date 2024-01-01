@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const ContentWrapper = styled.div`
 	margin: 30px auto 0;
-
+	width: ${({ theme }) => theme.screen.md};
 	max-width: 95%;
 	min-height: 95vh;
 	a {
