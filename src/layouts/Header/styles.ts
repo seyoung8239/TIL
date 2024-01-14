@@ -6,6 +6,7 @@ export const Header = styled.div`
 	top: 0px;
 	box-shadow: 1px;
 	border-bottom: 1px solid black;
+	width: 100%;
 	height: 50px;
 	background-color: white;
 	z-index: 100;
@@ -46,6 +47,10 @@ export const TitleText = styled.div`
 
 export const TitleWrapper = styled.div`
 	flex-grow: 7;
+	width: 75%;
+	@media screen and (max-width: ${({ theme }) => theme.screen.sm}) {
+		width: 85%;
+	}
 `;
 
 export const PostTitle = styled.h1`
